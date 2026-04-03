@@ -3006,7 +3006,7 @@ wheels = [
 ]
 
 [[package]]
-name = "qwen3-omni-server"
+name = "qwen-omni-server"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [

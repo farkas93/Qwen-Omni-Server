@@ -1,7 +1,7 @@
 [project]
-name = "qwen3-omni-server"
+name = "qwen-omni-server"
 version = "0.1.0"
-description = "Qwen3-Omni serving with vLLM"
+description = "Qwen-Omni serving with vLLM"
 requires-python = ">=3.12,<3.14"
 dependencies = [
     "vllm>=0.6.0", 
@@ -19,5 +19,5 @@ py-modules = ["serve"]
 package-dir = {"" = "src"}
 
 [project.scripts]
-qwen3-serve = "serve:main"
-qwen3-client = "client:main"
+qwen-omni-serve = "serve:main"
+qwen-omni-client = "client:main"
