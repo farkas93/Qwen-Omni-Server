@@ -1,0 +1,23 @@
+[project]
+name = "qwen3-omni-server"
+version = "0.1.0"
+description = "Qwen3-Omni serving with vLLM"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "vllm>=0.6.0", 
+    "vllm-omni>=0.1.0",
+    "transformers>=4.40.0",
+    "requests>=2.31.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["serve"]
+package-dir = {"" = "src"}
+
+[project.scripts]
+qwen3-serve = "serve:main"
+qwen3-client = "client:main"
